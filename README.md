@@ -1,34 +1,34 @@
-# Projeto de Microfrontends com Module Federation - README
+# Microfrontends Project with Module Federation - README
 
-Este é um guia para entender as tecnologias e abordagens utilizadas no projeto de Microfrontends, que emprega o conceito de **Module Federation**. O projeto foi dividido em diferentes "packages" para as funcionalidades de Autenticação (Auth), Contêiner (Container), Dashboard e Marketing. ReactJS foi escolhido para implementar o Container, Auth e Marketing, enquanto o Dashboard foi construído com Vue.js. Além disso, a gestão de rotas foi realizada utilizando tanto o `browserhistory` quanto o `memoryhistory`, garantindo uma experiência de navegação suave.
+This is a guide to understand the technologies and approaches used in the Microfrontends project, which employs the concept of **Module Federation**. The project has been divided into different packages for Authentication (Auth), Container, Dashboard, and Marketing functionalities. ReactJS was chosen to implement the Container, Auth, and Marketing, while the Dashboard was built with Vue.js. Additionally, route management was performed using both `browserhistory` and `memoryhistory`, ensuring a smooth navigation experience.
 
-## Tecnologias Principais
+## Key Technologies
 
-1. **ReactJS**: O ReactJS foi utilizado para construir os módulos de Autenticação, Container e Marketing. Ele permite criar interfaces de usuário reativas e dinâmicas, fundamentais para proporcionar uma experiência de usuário de alta qualidade.
+1. **ReactJS**: ReactJS was used to build the Authentication, Container, and Marketing modules. It allows creating reactive and dynamic user interfaces, essential for providing a high-quality user experience.
 
-2. **Vue.js**: O Vue.js foi escolhido para desenvolver o módulo de Dashboard. Sua abordagem baseada em componentes e sua curva de aprendizado suave o tornam uma excelente escolha para criar interfaces interativas e eficientes.
+2. **Vue.js**: Vue.js was chosen to develop the Dashboard module. Its component-based approach and gentle learning curve make it an excellent choice for creating interactive and efficient interfaces.
 
-3. **Module Federation**: O conceito de Module Federation foi empregado para criar uma arquitetura de Microfrontends altamente modular. Isso permite que cada pacote seja desenvolvido de forma independente e, ao mesmo tempo, seja capaz de compartilhar recursos e componentes entre si.
+3. **Module Federation**: The concept of Module Federation was employed to create a highly modular Microfrontends architecture. This allows each package to be developed independently while still being able to share resources and components among themselves.
 
-## Roteamento e Navegação
+## Routing and Navigation
 
-A gestão de rotas foi tratada com cuidado, empregando tanto o `browserhistory` para URLs amigáveis ao usuário quanto o `memoryhistory` para comunicação interna entre os módulos. Isso resultou em uma experiência de navegação coesa e eficiente.
+Route management was handled carefully, employing both `browserhistory`  for user-friendly URLs and `memoryhistory` for internal communication between modules. This resulted in a cohesive and efficient navigation experience.
 
-## Implantação e Integração Contínua
+## Deployment and Continuous Integration
 
-O projeto foi implantado usando as GitHub Actions, aproveitando os serviços da AWS, como o CloudFront e o S3, para hospedar os módulos. Isso permite que os possíveis usuários acessem os módulos de forma rápida e confiável, garantindo uma entrega contínua e eficaz.
+The project was deployed using GitHub Actions, leveraging AWS services such as CloudFront and S3 to host the modules. This allows potential users to access the modules quickly and reliably, ensuring continuous and effective delivery.
 
-## Pacotes Independentes e Desacoplados
+## Independent and Decoupled Packages
 
-Cada módulo (Auth, Container, Dashboard e Marketing) foi desenvolvido como um pacote independente, com suas próprias dependências e responsabilidades claras. Isso resulta em um sistema altamente desacoplado, permitindo o desenvolvimento, manutenção e escalabilidade eficientes de cada módulo.
+Each module (Auth, Container, Dashboard, and Marketing) was developed as an independent package, with its own dependencies and clear responsibilities. This results in a highly decoupled system, enabling efficient development, maintenance, and scalability of each module.
 
-## Como Executar o Projeto
+## How to Run the Project
 
-1. Clone este repositório para sua máquina local.
-2. Navegue até o diretório do projeto e, para cada pacote (Auth, Container, Dashboard e Marketing), execute `npm install` ou `yarn` para instalar as dependências.
-3. Para iniciar cada módulo, utilize comandos como `npm run start` ou `yarn start`.
-4. Abra seu navegador e acesse as URLs correspondentes aos diferentes módulos para visualizá-los em ação.
+1. Clone this repository to your local machine
+2. Navigate to the project directory, and for each package (Auth, Container, Dashboard, and Marketing), run `npm install` or `yarn` to install the dependencies.
+3. To start each module, use commands like `npm run start` or `yarn start`.
+4. Open your browser and access the URLs corresponding to the different modules to see them in action.
 
-## Personalização e Expansão
+## Customization and Expansion
 
-Sinta-se à vontade para explorar, personalizar e expandir este projeto de acordo com suas necessidades específicas. A arquitetura de Microfrontends oferece flexibilidade e escalabilidade, e a busca contínua por melhores práticas de desenvolvimento será fundamental para o sucesso contínuo deste projeto.
+Feel free to explore, customize, and expand this project according to your specific needs. The Microfrontends architecture offers flexibility and scalability, and the ongoing pursuit of best development practices will be crucial for the continuous success of this project.
